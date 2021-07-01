@@ -1,12 +1,14 @@
 'use strict'; 
 (function() {
 
-  let person = {
-    fitstName: "Mahmoud",
-    lastName: "Barry",
-    age: 20,
-    isAdult: function(){ return person.age >=18}
-  };
-  display(person.isAdult());
+  function registerUser(firstName, lastName){
+      let person = {
+          firstName,
+          lastName
+      }
+      display(person);
+  }
+
+  registerUser("Mahmoud","BARRY");
 
 })();
